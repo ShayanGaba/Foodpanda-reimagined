@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    /* background-color: aqua; */
+    /* border: 2px solid red; */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* height: 60px; */
+}
+
+.nav-bar>#user {
+    display: none;
+}
+
+.nav-bar>#logo {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: -20px;
+    left: -80px;
+}
+
+.auth-container {
+    width: 33%;
+}
+
+.loct-btn {
+    /* width: 20%; */
+    height: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* font-size: 18px; */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    bottom: -10px;
+    margin-left: -70px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.loct-btn>img {
+    height: 22px;
+}
+
+.loct-btn:hover {
+    background-color: rgba(248, 199, 220, 0.4);
+}
+
+.loct-btn-2 {
+    display: none;
+}
+
+.loct-btn>#same {
+    color: #4d4d4d;
+}
+
+.loct-btn>#change {
+    color: #e5307d;
+}
+
+.auth-info {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: -20px;
+    margin-right: -50px;
+}
+
+.auth-info>#cart {
+    height: 50px;
+}
+
+.auth-info>#login {
+    width: 75px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e5307d;
+    border-radius: 10px;
+    color: #e5307d;
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.auth-info>#signup {
+    width: 75px;
+    height: 30px;
+    background-color: #e5307d;
+    border: 1px solid #e5307d;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.auth-info>#lang {
+    height: 25px;
+}
+
+.auth-info>#cart {
+    height: 24px;
+    width: 20px;
+}
+
+.nav-bar>#user {
+    height: 28px !important;
+}
+
+.panda-hero {
+    z-index: -100;
+    background-color: #f7f7f7;
+    padding: 50px;
+    padding-right: 0;
+    display: flex;
+}
+
+.panda-hero>img {
+    position: relative;
+    top: -90px;
+    left: 50px;
+    height: 350px;
+    /* border: 2px solid red; */
+}
+
+.panda-hero>p {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 50px;
+    color: #333333;
+    height: 150px;
+    /* border: 2px solid red; */
+}
+
+.container-1 {
+    margin: 40px;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+.container-1>p {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    text-decoration: underline;
+    color: #e5307d;
+    font-weight: bold;
+    /* border: 2px solid red; */
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+    .auth-info>#login,#signup,#lang,.loct-btn{
+        display: none;
+    }
+    .nav-bar{
+        border-bottom: 1px solid #d3d3d3;
+    }
+    .nav-bar>#user{
+    display: block;
+    /* border: 2px solid green; */
+    position: relative;
+    top: 2px;
+    left: -32px;
+    height: 40px;
+    width: 30px;
+    }
+    .nav-bar>#logo{
+    /* border: 2px solid blue; */
+    height: 90px;
+    width: 140px;
+    position: relative;
+    top: -30px;
+    left: -32px;
+    }
+    .auth-info>#cart{
+    /* border: 2px solid purple; */
+    height: 30px;
+    width: 25px;
+    position: relative;
+    top: -23px;
+    left: -32px;
+    }
+    .nav-bar{
+        justify-content: space-around;
+        /* border: 2px solid red; */
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        height: 120px;
+    }
+    .auth-info>#cart{
+        position: relative;
+        left: -30px;
+    }
+    .loct-btn-2{
+        width: 100%;
+    }
+    .loct-btn-2{
+    /* border: 2px solid red; */
+    display: block;
+    height: 20px;
+    border: none;   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 65%;
+    /* font-size: 18px; */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 70px;
+    right: -70px;
+    /* margin-left: -70px; */
+    font-weight: bold;
+    }
+    .loct-btn-2>img {
+        height: 15px;
+    }
+    .nav-bar>#user,#logo,.auth-info>#cart{
+        align-items: center;
+    }
+    .panda-hero{
+        position: relative;
+        top: 30px;
+    }
+    .panda-hero>p{
+        font-size: 20px;
+        line-height: normal;
+        /* border: 2px solid red; */
+        height: 250px;
+        margin: 0;
+        position: relative;
+        left: -30px;
+        font-weight: bold;
+    }
+    .panda-hero>img{
+        height: 220px;
+        width: 250px;
+        /* border: 2px solid red; */
+        position: relative;
+        left: -80px;
+        top: -7px;
+        margin-left: 80px;
+    }
+}
